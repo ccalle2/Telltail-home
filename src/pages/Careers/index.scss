@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+.careers {
+  h2 {
+    color: $dark-blue800;
+    font-weight: 600;
+    font-size: calc((2.3 - 1) * 1.2vw + 1rem);
+    @media (min-width: 1944px) {
+      font-size: calc(2.2 * 1rem);
+    }
+  }
+
+  .careers__careerList {
+    width: 100%;
+
+    & > div {
+      color: $text-dark-gray;
+      font-size: calc((1.2 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+      }
+    }
+
+    h3 {
+      color: $dark-blue800;
+      font-weight: 600;
+      font-size: calc((1.6 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+      }
+    }
+
+    a {
+      color: $text-dark-gray;
+      text-decoration: none;
+      width: fit-content;
+      height: fit-content;
+      border-bottom: 2px solid $white-blue;
+      font-size: calc((1.2 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+      }
+    }
+  }
+}

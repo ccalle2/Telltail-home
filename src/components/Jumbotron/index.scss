@@ -1,0 +1,135 @@
+@import "../../index.scss";
+
+.jumbotron {
+  width: 100%;
+
+  &.bg-short {
+    .jumbotron__img {
+      width: 100%;
+      margin-top: -8rem;
+      height: calc(100vh + 4rem);
+      object-fit: cover;
+      object-position: center;
+      max-height: 12rem;
+    }
+  }
+
+  .jumbotron__title {
+    margin-top: -2.5rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0006;
+  }
+
+  .jumbotron__img {
+    width: 100%;
+    margin-top: -8rem;
+    height: calc(100vh + 4rem);
+    object-fit: cover;
+    @media (min-width: 425px) {
+      height: 100vh;
+      max-height: 35rem;
+    }
+    @media (min-width: 1700px) {
+      height: 100vh;
+      max-height: 40rem;
+    }
+    @media (min-width: 1944px) {
+      height: 100vh;
+    }
+  }
+
+  .jumbotron__container {
+    z-index: 4;
+    height: 100%;
+    left: 0;
+    right: 0;
+
+    h1 {
+      font-weight: 500;
+      font-size: calc((4 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((4 - 1) * 1.2vw + 1rem);
+      }
+      @media (min-width: 1944px) {
+        font-size: calc(4 * 1rem);
+      }
+    }
+
+    h3 {
+      font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+      font-weight: 300;
+      max-width: 900px;
+      @media (min-width: 1944px) {
+        font-size: calc(1.4 * 1rem);
+      }
+    }
+
+    form {
+      width: 100%;
+      max-width: 18rem;
+
+      @media (min-width: 575px) {
+        max-width: 50rem;
+      }
+
+      input {
+        padding: 1.25rem 1.75rem;
+        width: 100%;
+        border-radius: 0;
+        outline: none;
+        font-size: 1rem;
+        font-family: Helvetica, "Poppins", sans-serif;
+
+        &::placeholder {
+          color: #0004;
+        }
+
+        @media (min-width: 775px) {
+          padding: 1.25rem 1.75rem;
+        }
+      }
+
+      .input-first-name {
+        @media (min-width: 775px) {
+          width: 10rem;
+        }
+      }
+
+      .input-last-name {
+        @media (min-width: 775px) {
+          width: 10rem;
+        }
+      }
+
+      .input-email {
+        @media (min-width: 775px) {
+          width: 20rem;
+        }
+      }
+    }
+
+    button {
+      background: $main-color;
+      white-space: nowrap;
+      font-size: 1rem;
+      font-family: Helvetica, "Poppins", sans-serif;
+      padding: 1.25rem 2rem;
+      width: 100%;
+      &:hover {
+        opacity: 0.8;
+      }
+
+      @media (min-width: 575px) {
+        width: auto;
+      }
+    }
+  }
+}

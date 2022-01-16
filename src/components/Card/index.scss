@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+/* services */
+.card__container {
+  h4 {
+    font-weight: 700;
+    color: $dark-blue700;
+    font-size: calc((1.2 - 1) * 1.2vh + 1rem);
+    @media (min-width: 425px) and (max-width: 1943px) {
+      font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: calc((1 - 1) * 1.2vh + 1rem);
+  }
+}

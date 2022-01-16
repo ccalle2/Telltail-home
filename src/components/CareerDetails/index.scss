@@ -1,0 +1,121 @@
+@import "../../index.scss";
+
+.careerDetails {
+  .careerDetails__back {
+    cursor: pointer;
+
+    span {
+      color: $text-gray;
+    }
+  }
+
+  .careerDetails__head {
+    h2 {
+      color: $dark-blue800;
+      font-weight: 600;
+      font-size: calc((2.3 - 1) * 1.2vw + 1rem);
+      @media (min-width: 1944px) {
+        font-size: calc(2.2 * 1rem);
+      }
+    }
+
+    span {
+      color: $text-dark-gray;
+      font-size: calc((1.2 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+      }
+    }
+  }
+
+  h3 {
+    color: $dark-blue800;
+    font-weight: 600;
+    font-size: calc((1.8 - 1) * 1.2vh + 1rem);
+    @media (min-width: 425px) and (max-width: 1943px) {
+      font-size: calc((1.8 - 1) * 1.2vw + 1rem);
+    }
+  }
+
+  .careerDetails__details {
+    color: $text-dark-gray;
+
+    h4 {
+      color: $dark-blue800;
+      font-weight: 600;
+      font-size: calc((1.4 - 1) * 1.2vh + 1rem);
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+      }
+    }
+  }
+
+  .careerDetails__form {
+    background: #f4f7f6;
+    border-radius: 1rem;
+
+    span {
+      color: $text-dark-gray;
+    }
+
+    .careerDetails__inputGroup {
+      position: relative;
+      label {
+        font-size: 0.85rem;
+        color: $text-dark-gray;
+        font-weight: 600;
+      }
+
+      .careerDetails__labelFile {
+        position: absolute;
+        top: 2.9rem;
+        left: 1.25em;
+        font-size: 0.85rem;
+        color: $text-gray;
+      }
+
+      input {
+        background: transparent;
+        padding: 0.9em 1.25em;
+        border-radius: 1.25em;
+        font-size: 0.9rem;
+        border-color: $text-gray;
+
+        &::placeholder {
+          color: $text-gray;
+        }
+
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &[type="file"] {
+          position: relative;
+          color: transparent;
+          &::-webkit-file-upload-button {
+            visibility: hidden;
+          }
+          &::before {
+            content: "Browse";
+            max-width: 7rem;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            background: $bg-gray;
+            padding: 0.5em;
+            outline: none;
+            position: absolute;
+            right: 0.75rem;
+            top: 0.45rem;
+            border-radius: 3em;
+            white-space: nowrap;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: $text-dark-gray;
+          }
+        }
+      }
+    }
+  }
+}

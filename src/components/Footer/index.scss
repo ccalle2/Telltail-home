@@ -1,0 +1,75 @@
+.footer {
+  background: #f3f7f6;
+  padding-top: 3.3vmax;
+  padding-bottom: 3.3vmax;
+
+  .footer__container {
+    width: 100%;
+    max-width: 20rem;
+
+    span {
+      font-family: Helvetica, "Poppins", sans-serif;
+      
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1 - 1) * 1.2vw + 1rem);
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+
+      @media (min-width: 1944px) {
+        font-size: calc(1.4 * 1rem);
+      }
+
+      @media (min-width: 425px) and (max-width: 1943px) {
+        font-size: calc((1.4 - 1) * 1.2vw + 1rem);
+      }
+    }
+
+    form {
+      width: 100%;
+      max-width: 18rem;
+      
+      @media (min-width: 575px) {
+        max-width: 25rem;
+      }
+    
+      input {
+        padding: 1.25rem 1.75rem;
+        border-radius: 0;
+        outline: none;
+        font-size: 1rem;
+        font-family: Helvetica, "Poppins", sans-serif;
+    
+        &::placeholder {
+          color: #0004;
+        }
+      }
+    }
+    
+    button {
+      background: #add8e6;
+      white-space: nowrap;
+      font-size: 1rem;
+      font-family: Helvetica, "Poppins", sans-serif;
+      padding: 1.25rem 2rem;
+      width: 100%;
+
+      @media (min-width: 575px) {
+        width: auto;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .footer__cp {
+    font-size: calc((0.9 - 1) * 1.2vw + 1rem);
+  }
+}
+
+

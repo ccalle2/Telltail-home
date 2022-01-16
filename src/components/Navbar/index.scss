@@ -1,0 +1,59 @@
+.navbar__container {
+  z-index: 201;
+  padding: 2vw 4vw;
+
+  .navbar__logo {
+    width: 100%;
+    max-width: 7.5rem;
+    @media (min-width: 768px) {
+      max-width: 12rem;
+    }
+  }
+
+  .navbar__iconMobile {
+    left: 2rem;
+    z-index: 200;
+
+    span {
+      display: flex;
+      width: 2.15rem;
+      margin: 0.5rem 0;
+      height: 2px;
+      background: #fffa;
+      transition: 0.25s;
+    }
+
+    &.open {
+      span:first-child {
+        background: #0008;
+        transform: rotate(-135deg) translate(0%, -0.5rem);
+      }
+      span:last-child {
+        background: #0008;
+        transform: rotate(135deg) translate(0%, 0.45rem);
+      }
+    }
+  }
+}
+
+.navbar__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4faf8;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+
+  a {
+    margin: auto;
+    display: block;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 300;
+  }
+}
+
+
