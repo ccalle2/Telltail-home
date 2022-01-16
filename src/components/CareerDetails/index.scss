@@ -58,6 +58,20 @@
       color: $text-dark-gray;
     }
 
+    button {
+      background: #add8e6;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      padding: 0.5em 1.25rem;
+      width: 100%;
+      max-width: 15rem;
+      margin: 0 auto -1.25rem auto;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
     .careerDetails__inputGroup {
       position: relative;
       label {
@@ -72,6 +86,10 @@
         left: 1.25em;
         font-size: 0.85rem;
         color: $text-gray;
+        width: calc(100% - 12rem);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       input {

@@ -1,6 +1,7 @@
 import { Container, Form, FormControl, Button } from "react-bootstrap";
 import React, { useState } from "react";
 import "./index.scss";
+import { validateWaitingList } from "../../utils/validateForm";
 
 const Jumbotron = ({ home, image, title, bgShort }) => {
   const [data, setData] = useState({
@@ -11,12 +12,20 @@ const Jumbotron = ({ home, image, title, bgShort }) => {
   });
 
   const [success, setSuccess] = useState(false);
+  const [errors, setErrors] = useState(false);
   const handleChange = (e) =>
     setData({ ...data, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const { errors, valid } = validateWaitingList(data);
+
+      if (!valid) {
+        setErrors(errors);
+        return;
+      }
+
       const res = await fetch(
         "https://sheet.best/api/sheets/e4f0ff64-6527-44ba-bfcf-edc62af8206e",
         {
@@ -68,7 +77,11 @@ const Jumbotron = ({ home, image, title, bgShort }) => {
                 <FormControl
                   type="text"
                   placeholder="First Name"
-                  className="me-2 mb-4 input-first-name"
+                  className={`me-2 mb-4 input-first-name ${
+                    errors &&
+                    errors.firstName &&
+                    "border border-danger border-2"
+                  }`}
                   aria-label="Search"
                   name="firstName"
                   onChange={handleChange}
@@ -78,7 +91,9 @@ const Jumbotron = ({ home, image, title, bgShort }) => {
                 <FormControl
                   type="text"
                   placeholder="Last Name"
-                  className="me-2 mb-4 input-last-name"
+                  className={`me-2 mb-4 input-last-name ${
+                    errors && errors.lastName && "border border-danger border-2"
+                  }`}
                   aria-label="Search"
                   name="lastName"
                   onChange={handleChange}
@@ -88,7 +103,9 @@ const Jumbotron = ({ home, image, title, bgShort }) => {
                 <FormControl
                   type="email"
                   placeholder="Email Address"
-                  className="me-2 mb-4 input-email"
+                  className={`me-2 mb-4 input-email ${
+                    errors && errors.email && "border border-danger border-2"
+                  }`}
                   aria-label="Search"
                   name="email"
                   onChange={handleChange}

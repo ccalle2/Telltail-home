@@ -9,15 +9,23 @@ import { careerLists } from "../../utils/careers";
 
 const CareerList = ({ id, roleTitle, location, type }) => {
   return (
-    <div className="careers__careerList d-flex flex-column flex-sm-row align-items-sm-center  justify-content-between mt-4">
+    <div className="careers__careerList d-flex flex-column flex-sm-row align-items-sm-center  justify-content-between mt-5">
       <div>
         <h3>{roleTitle}</h3>
         <div>
-          {location} | {type}
+          {location} <span className="mx-2">|</span> {type}
         </div>
       </div>
-      <Link to={`/careers/${id}`} className="mt-2 mt-sm-0">
-        See Details
+
+      <Link
+        to={`/careers/${id}`}
+        className="mt-2 mt-sm-0"
+        onClick={() =>
+          // scrolled to the top
+          window.scrollTo({ top: 0 })
+        }
+      >
+        See details
       </Link>
     </div>
   );
@@ -28,7 +36,7 @@ const Careers = () => {
     <div className="careers">
       <Jumbotron image={HERO} title="We are hiring!" />
       <Container className="p-4 p-md-5 py-3 my-4">
-        <h2 className="mt-3 mb-5">Open Positions</h2>
+        <h2 className="mt-3 mb-5">Open positions</h2>
         <div>
           {careerLists.map(({ id, roleTitle, type, location }) => (
             <CareerList

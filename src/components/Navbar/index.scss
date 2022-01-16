@@ -44,16 +44,12 @@
   bottom: 0;
   background: #f4faf8;
   z-index: 100;
-  display: grid;
-  place-items: center;
 
   a {
-    margin: auto;
+    // margin: auto;
     display: block;
     font-size: 1.5rem;
     color: #000;
     font-weight: 300;
   }
 }
-
-

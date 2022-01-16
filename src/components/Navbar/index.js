@@ -62,8 +62,9 @@ const Navbar = () => {
         </Nav>
       </Container>
       {openNav && (
-        <div className="navbar__mobile">
+        <div className="navbar__mobile d-flex justify-content-center align-items-center flex-column">
           <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/careers">Careers</Nav.Link>
         </div>
       )}
     </NavbarComponent>
