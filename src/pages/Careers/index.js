@@ -11,7 +11,17 @@ const CareerList = ({ id, roleTitle, location, type }) => {
   return (
     <div className="careers__careerList d-flex flex-column flex-sm-row align-items-sm-center  justify-content-between mt-5">
       <div>
-        <h3>{roleTitle}</h3>
+        
+        <Link
+          to={`/careers/${id}`}
+          className="mt-2 mt-sm-0"
+          onClick={() =>
+            // scrolled to the top
+            window.scrollTo({ top: 0 })
+          }
+        >
+          <h3>{roleTitle}</h3>
+        </Link>
         <div>
           {location} <span className="mx-2">|</span> {type}
         </div>

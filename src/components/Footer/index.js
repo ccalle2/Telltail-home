@@ -1,5 +1,5 @@
-import { Button, Container, Form, FormControl } from "react-bootstrap";
-import React, { useState } from "react";
+import { Button, Container, Form, FormControl, Nav } from "react-bootstrap";
+import { useState } from "react";
 import "./index.scss";
 
 const Footer = () => {
@@ -79,6 +79,13 @@ const Footer = () => {
             </Form>
           </>
         )}
+        <div className="d-block my-5 text-center">
+          Interested in joining the TellTail team? Click{" "}
+          <Nav.Link href="/careers" className="d-inline-block p-0">
+            <strong>here</strong>
+          </Nav.Link>{" "}
+          to learn more about our available roles!
+        </div>
       </Container>
       <Container className=" fw-light px-5 fs-6">
         <small className="footer__cp">© 2021 TellTail Holdings Inc.</small>

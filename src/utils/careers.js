@@ -75,7 +75,7 @@ export const careerLists = [
       aboutTellTails: `TellTail knows that pet breeders are currently operating without the business, community, and educational infrastructure that they need to thrive, which results in a number of issues impacting breeders, pet parents, and pets. Breeders juggle inefficient platforms, restrictions on social media, and complex barriers on the business side, all while balancing vulnerable litter care. TellTail is the first comprehensive platform to support pet breeders, offering “nose to tail” customizable business solutions for breeders. TellTail also offers a trusted community, and does not tolerate scammers and puppy mills. TellTail’s mission is rooted in the belief that a supportive breeder ecosystem leads to healthier breeding programs, and ultimately results in healthier, happier lives for the 6 million puppies that breeders send to new homes in the US each year. The TellTail team is on a path of accelerated growth, fueled by the work of a passionate team – and this is only the beginning. If you love pets and this mission speaks to you, then your “tail” begins here!
       <br/>
       <br/>
-  Individuals seeking employment at TellTail are considered without regards to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
+  Individuals seeking employment at TellTail are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
       `,
     },
   },
@@ -147,7 +147,7 @@ export const careerLists = [
       aboutTellTails: `TellTail knows that pet breeders are currently operating without the business, community, and educational infrastructure that they need to thrive, which results in a number of issues impacting breeders, pet parents, and pets. Breeders juggle inefficient platforms, restrictions on social media, and complex barriers on the business side, all while balancing vulnerable litter care. TellTail is the first comprehensive platform to support pet breeders, offering “nose to tail” customizable business solutions for breeders. TellTail also offers a trusted community, and does not tolerate scammers and puppy mills. TellTail’s mission is rooted in the belief that a supportive breeder ecosystem leads to healthier breeding programs, and ultimately results in healthier, happier lives for the 6 million puppies that breeders send to new homes in the US each year. The TellTail team is on a path of accelerated growth, fueled by the work of a passionate team – and this is only the beginning. If you love pets and this mission speaks to you, then your “tail” begins here!
         <br/>
         <br/>
-    Individuals seeking employment at TellTail are considered without regards to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
+    Individuals seeking employment at TellTail are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
         `,
     },
   },
@@ -157,16 +157,16 @@ export const careerLists = [
     location: "Greater Los Angeles Area",
     type: "Hybrid-remote with some travel",
     details: {
-      role: `We are a growing team and always looking for passionate individuals to jump on the TellTail adventure! 
+      role: `TellTail is a big vision, and we’re prioritizing the top minds — people who get excited about overhauling the broken market for pets and supporting trusted breeders, to join our team. You will work with a motivated team to bring this big vision to reality and there is a lot to be done and incredible room for growth within the organization. This is an exciting opportunity to be a foundational member of a high-growth startup — and be surrounded by puppies! We are open to a wide range of experience and would love to meet you! 
           <br/>
           <br/>
-          If you are interested in joining our team and have something in particular you would like to work on - please let us know by filling the application below.
+          If you are interested in joining our team and have something in particular you would like to work on - please let us know by filling the application below. We can't wait for you to jump on the TellTail adventure - "your tail begins here!"
             `,
 
       aboutTellTails: `TellTail knows that pet breeders are currently operating without the business, community, and educational infrastructure that they need to thrive, which results in a number of issues impacting breeders, pet parents, and pets. Breeders juggle inefficient platforms, restrictions on social media, and complex barriers on the business side, all while balancing vulnerable litter care. TellTail is the first comprehensive platform to support pet breeders, offering “nose to tail” customizable business solutions for breeders. TellTail also offers a trusted community, and does not tolerate scammers and puppy mills. TellTail’s mission is rooted in the belief that a supportive breeder ecosystem leads to healthier breeding programs, and ultimately results in healthier, happier lives for the 6 million puppies that breeders send to new homes in the US each year. The TellTail team is on a path of accelerated growth, fueled by the work of a passionate team – and this is only the beginning. If you love pets and this mission speaks to you, then your “tail” begins here!
           <br/>
           <br/>
-      Individuals seeking employment at TellTail are considered without regards to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
+      Individuals seeking employment at TellTail are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, or sexual orientation.
           `,
     },
   },

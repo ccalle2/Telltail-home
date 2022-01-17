@@ -24,8 +24,14 @@ export const validateInputApplyJob = ({
     }
   }
 
-  if (resume.trim() === "") {
-    errors.resume = "Resume or CV should not be empty";
+  if (resume.name) {
+    if (resume.name.trim() === "") {
+      errors.resume = "Resume or CV should not be empty";
+    }
+  } else {
+    if (resume.trim() === "") {
+      errors.resume = "Resume or CV should not be empty";
+    }
   }
 
   return {
