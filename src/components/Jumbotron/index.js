@@ -27,7 +27,7 @@ const Jumbotron = ({ home, image, title, bgShort }) => {
       }
 
       const res = await fetch(
-        "https://sheet.best/api/sheets/e4f0ff64-6527-44ba-bfcf-edc62af8206e",
+        "https://sheet.best/api/sheets/1ed45b51-2411-4583-94e0-c3af6bdbc71f",
         {
           method: "POST",
           headers: {

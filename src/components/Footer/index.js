@@ -2,6 +2,11 @@ import { Button, Container, Form, FormControl, Nav } from "react-bootstrap";
 import { useState } from "react";
 import "./index.scss";
 
+import FACEBOOK from "../../assets/images/facebook.png";
+import INSTAGRAM from "../../assets/images/instagram.png";
+import LINKEDIN from "../../assets/images/linkedIn.png";
+import TWITTER from "../../assets/images/twitter.png";
+
 const Footer = () => {
   const [data, setData] = useState({
     email: "",
@@ -22,7 +27,7 @@ const Footer = () => {
       }
 
       const res = await fetch(
-        "https://sheet.best/api/sheets/e4f0ff64-6527-44ba-bfcf-edc62af8206e/tabs/Newsletter signup",
+        "https://sheet.best/api/sheets/1ed45b51-2411-4583-94e0-c3af6bdbc71f/tabs/Newsletter signup",
         {
           method: "POST",
           headers: {
@@ -47,7 +52,21 @@ const Footer = () => {
     <footer className="footer">
       <Container className="footer__container d-flex align-items-center flex-column justify-content-center">
         <h3 className="mb-4">Trust. Transparency. TellTail.</h3>
-        <span className="d-block my-5 text-center">
+        <div>
+          <a href="https://www.facebook.com/TellTailHQ" target="_blank" rel="noreferrer">
+            <img className="m-3" src={FACEBOOK} alt="facebook"/>
+          </a>
+          <a href="https://www.instagram.com/telltailpets/?hl=en" target="_blank" rel="noreferrer">
+            <img className="m-3" src={INSTAGRAM} alt="instagram"/>
+          </a>
+          <a href="https://www.linkedin.com/company/telltailpets/about/" target="_blank" rel="noreferrer">
+            <img className="m-3" src={LINKEDIN} alt="linkedIn"/>
+          </a>
+          <a href="https://twitter.com/telltailpets" target="_blank" rel="noreferrer">
+            <img className="m-3" src={TWITTER} alt="twitter"/>
+          </a>
+        </div>
+        <span className="d-block my-4 text-center">
           Drop your email below to stay in the loop for exciting updates!
         </span>
         {success ? (
